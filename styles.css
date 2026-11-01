@@ -41,3 +41,13 @@ body{background:linear-gradient(180deg,#fff8eb 0,#fffdf8 45%,#f3f7e9 100%)}
 .backup-actions .button{white-space:nowrap}
 .backup-actions .ghost{background:#fffdf8;border:2px solid var(--forest);color:var(--forest)}
 @media(max-width:720px){.backup-panel{grid-template-columns:1fr;padding:28px 22px;gap:22px}.backup-section{padding-bottom:110px}}
+
+/* Audit fixes: readable placeholders, visible field focus, 12px text floor, tappable delete */
+.care-form input,.care-form select,.care-form textarea{background:#0e2e2733}
+.care-form ::placeholder{color:#dcebe4;opacity:1;font-style:italic;font-weight:500}
+.plant-form ::placeholder{color:var(--muted);opacity:1}
+.care-form :is(input,select,textarea):focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.plant-form :is(input,select,textarea):focus-visible,.search:focus-within{outline:3px solid var(--forest);outline-offset:2px}
+.eyebrow,.today-heading,.status,.plant-location,.card-stats small,.detail-grid small,.activity-type,.photo-picker small{font-size:12px}
+.event-actions button{display:inline-grid;place-items:center;min-width:44px;min-height:44px;margin-right:-12px;border-radius:99px}
+.event-actions button:hover{background:#c4503a14}
