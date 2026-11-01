@@ -51,3 +51,12 @@ body{background:linear-gradient(180deg,#fff8eb 0,#fffdf8 45%,#f3f7e9 100%)}
 .eyebrow,.today-heading,.status,.plant-location,.card-stats small,.detail-grid small,.activity-type,.photo-picker small{font-size:12px}
 .event-actions button{display:inline-grid;place-items:center;min-width:44px;min-height:44px;margin-right:-12px;border-radius:99px}
 .event-actions button:hover{background:#c4503a14}
+
+/* Phone layout: today's plants on the first screen, Log care right after it */
+@media(max-width:620px){
+main{display:flex;flex-direction:column}
+.care-section{order:1}.summary-grid{order:2}#collection{order:3}#history{order:4}#backup{order:5}
+.hero{padding:24px 22px 32px}
+.hero h1{font-size:52px}
+.hero .lede,.hero-stickers,.hero-actions .primary{display:none}
+}
