@@ -29,3 +29,15 @@ body{background:linear-gradient(180deg,#fff8eb 0,#fffdf8 45%,#f3f7e9 100%)}
 .care-form select option{color:var(--ink);background:#fff}
 .today-heading,.status,.plant-location,.card-stats small,.detail-grid small,.activity-type,.photo-picker small{font-size:11px}
 .care-form label,.plant-form label,.summary-grid article div span,.hero-stickers span,.event-actions,.measurements span,.growth-card strong,.growth-card span{font-size:12px}
+
+/* Backup & restore */
+.backup-section{padding-top:0}
+.backup-panel{display:grid;grid-template-columns:1.4fr auto;gap:32px;align-items:center;max-width:1000px;padding:36px 40px;background:var(--sage);border-radius:28px 8px;box-shadow:10px 12px 0 #2457461a}
+.backup-copy h2{font:clamp(30px,3.4vw,42px)/1.05 var(--serif);color:var(--forest);margin:0 0 12px}
+.backup-copy>p{color:var(--muted);line-height:1.65;margin:0;max-width:56ch}
+.backup-copy .backup-status{display:inline-block;margin-top:16px;padding:7px 12px;border-radius:99px;background:#fffdf8;color:var(--forest);font-size:12px;font-weight:700}
+.backup-copy .backup-status.due{background:#fff0d4;color:#7a5512}
+.backup-actions{display:grid;gap:10px}
+.backup-actions .button{white-space:nowrap}
+.backup-actions .ghost{background:#fffdf8;border:2px solid var(--forest);color:var(--forest)}
+@media(max-width:720px){.backup-panel{grid-template-columns:1fr;padding:28px 22px;gap:22px}.backup-section{padding-bottom:110px}}
