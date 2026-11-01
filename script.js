@@ -17,7 +17,8 @@ function latest(p,t){return[...(p.events||[])].sort((a,b)=>b.date.localeCompare(
 let deferredInstall;
 window.addEventListener("beforeinstallprompt", event => { event.preventDefault(); deferredInstall = event; });
 $("#install-app").addEventListener("click", async () => { if (deferredInstall) { deferredInstall.prompt(); await deferredInstall.userChoice; deferredInstall = null; } else { $("#install-dialog").showModal(); } });
-window.addEventListener("appinstalled", () => toast("H₂Grow was added to your home screen!"));
+window.addEventListener("appinstalled", () => { $("#install-app").hidden = true; toast("H₂Grow was added to your home screen!"); });
+if (matchMedia("(display-mode: standalone)").matches || navigator.standalone) $("#install-app").hidden = true;
 if ("serviceWorker" in navigator && location.protocol !== "file:") window.addEventListener("load", () => navigator.serviceWorker.register("./service-worker.js"));
 
 const BACKUP_KEY="h2grow-last-backup",NUDGE_KEY="h2grow-backup-nudge",TYPES=["watered","fertilized","repotted","pruned","treated","growth","note"];
