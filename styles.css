@@ -20,3 +20,12 @@ body{background:linear-gradient(180deg,#fff8eb 0,#fffdf8 45%,#f3f7e9 100%)}
 .header-actions{display:flex;align-items:center;gap:10px}.install-button{border:0;background:#dff4f1;color:var(--forest);padding:10px 14px;border-radius:999px;font-size:12px;font-weight:700;cursor:pointer}.install-button:before{content:"↓";margin-right:6px}.install-modal{padding:42px;text-align:center;max-width:560px}.app-icon-preview{width:112px;height:112px;margin:0 auto 24px;background:var(--forest);color:var(--cream);border-radius:28px;display:grid;place-items:center;font-size:38px;font-weight:700;box-shadow:8px 8px 0 var(--sun);line-height:.8}.app-icon-preview small{display:block;font-size:16px}.install-modal h2{font:48px/1 var(--serif);color:var(--forest);margin:0 0 28px}.install-steps{display:grid;grid-template-columns:1fr 1fr;gap:12px;text-align:left}.install-steps>div{background:#f3f7e9;padding:18px;border-radius:16px}.install-steps>div:nth-child(2){background:#dff4f1}.install-steps b{color:var(--forest)}.install-steps p,.install-note{font-size:13px;line-height:1.6;color:var(--muted)}.install-note{margin:22px 0 0}
 @media(max-width:620px){.topbar{backdrop-filter:none;background:#fff8eb}.install-button{position:fixed;right:14px;bottom:14px;z-index:18;background:var(--sun);box-shadow:0 5px 18px #173f3540}.header-actions{gap:5px}.install-modal{padding:34px 20px}.install-steps{grid-template-columns:1fr}}
 .confirm-modal{width:min(440px,92vw);padding:34px 30px 28px;text-align:center}.confirm-modal h2{font:36px/1.05 var(--serif);color:var(--forest);margin:0 0 12px}.confirm-modal #confirm-text{color:var(--muted);line-height:1.6;margin:0 0 26px}.confirm-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.confirm-actions .button{min-width:130px}
+
+/* Readability: WCAG AA contrast and an 11px floor for functional text */
+:root{--muted:#55675f;--clay:#c4503a}
+.hero .primary{box-shadow:4px 4px 0 #8f3a2b}
+.activity-type{color:#b8472f}
+.eyebrow.light{color:#dcebe4}.care-intro>p:last-child{color:#e4efea}
+.care-form select option{color:var(--ink);background:#fff}
+.today-heading,.status,.plant-location,.card-stats small,.detail-grid small,.activity-type,.photo-picker small{font-size:11px}
+.care-form label,.plant-form label,.summary-grid article div span,.hero-stickers span,.event-actions,.measurements span,.growth-card strong,.growth-card span{font-size:12px}
